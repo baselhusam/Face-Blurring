@@ -129,21 +129,28 @@ The script was developed using Python version **3.9.13**
 
 <br>
 
-1. Download the Face Detection dataset from [roboflow](https://universe.roboflow.com/mohamed-traore-2ekkp/face-detection-mik1i) and extract it.
+1. Download the Face Detection dataset from [roboflow](https://universe.roboflow.com/mohamed-traore-2ekkp/face-detection-mik1i) and extract it. <br>
 2. Install the required packages by running  
+    
     ```bash 
     pip install -r requirements.txt 
     ```
+
 4. To blur a specific image using the **Haar cascade classifier** write the following command
+    
     ```bash
     python FB_CascadeClassifier.py img_path
     ```
     The blurred image will be saved as **cascade_output.jpg**
+    <br>
+    
 4. To blur a specific image using the **YOLO** model write the following command
+    
     ```bash
     python FB_YOLO.py img_path
     ```
     The blurred image will be saved as **Yolo_output.jpg**
+    
 
 <br>
 
