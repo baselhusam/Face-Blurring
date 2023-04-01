@@ -120,7 +120,7 @@ if upd_img is not None:
         elif selected_model == "HaarCascade Classifier":
 
             cascade_classifier_path = "https://github.com/baselhusam/Blurify.AI/blob/main/pretrained_models/haarcascade_frontalface_default.xml"
-            face_cascade = cv2.CascadeClassifier(cascade_classifier_path)
+            face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + cascade_classifier_path)
             gray_img = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
             faces = face_cascade.detectMultiScale(gray_img, scaleFactor=1.1, minNeighbors=3, minSize=(30,30))
             img = cv2.imread(image_path)
