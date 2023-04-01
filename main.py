@@ -87,7 +87,7 @@ if upd_img is not None:
 
             weights_path = "https://github.com/baselhusam/Blurify.AI/blob/main/pretrained_models/YOLO_Model.pt"
             model = YOLO('yolov8n.pt')
-            model = YOLO("D:\\Projects\\ProgressSoft_Assignment\\Problem1\\pretrained_models\\YOLO_Model.pt")
+            model = YOLO("https://github.com/baselhusam/Blurify.AI/blob/main/pretrained_models/YOLO_Model.pt")
 
             results = model(image_path)
             img = cv2.imread(image_path)
