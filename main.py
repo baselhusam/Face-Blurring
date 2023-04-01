@@ -85,7 +85,7 @@ if upd_img is not None:
         # Yolo detection
         if selected_model == "YOLOv8":
 
-            weights_path = ".\\pretrained_models\\YOLO_Model.pt"
+            weights_path = "https://github.com/baselhusam/Blurify.AI/blob/main/pretrained_models/YOLO_Model.pt"
             model = YOLO('yolov8n.pt')
             model = YOLO("D:\\Projects\\ProgressSoft_Assignment\\Problem1\\pretrained_models\\YOLO_Model.pt")
 
@@ -119,7 +119,7 @@ if upd_img is not None:
         # HaarCascade Classifier detection
         elif selected_model == "HaarCascade Classifier":
 
-            cascade_classifier_path = ".\\pretrained_models\\haarcascade_frontalface_default.xml"
+            cascade_classifier_path = "https://github.com/baselhusam/Blurify.AI/blob/main/pretrained_models/haarcascade_frontalface_default.xml"
             face_cascade = cv2.CascadeClassifier(cascade_classifier_path)
             gray_img = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
             faces = face_cascade.detectMultiScale(gray_img, scaleFactor=1.1, minNeighbors=3, minSize=(30,30))
